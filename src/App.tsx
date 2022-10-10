@@ -49,7 +49,7 @@ const App: FC = () => {
     content = <Tours items={tours} removeTour={removeTourHandler} />;
   }
 
-  if (tours.length === 0) {
+  if (tours.length === 0 && !isLoading) {
     content = (
       <section className="container">
         <h1>No tours left</h1>;
